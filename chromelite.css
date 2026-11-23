@@ -1,0 +1,330 @@
+
+/* GENERAL RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003153;
+    padding: 15px 7%;
+}
+
+.logo img {
+    display: block;
+    height: auto;
+}
+
+
+/* NAVIGATION */
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #FF6600;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    background: linear-gradient(
+        rgba(0, 49, 83, 0.85),
+        rgba(0, 49, 83, 0.85)
+    );
+
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #FF6600;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #e65c00;
+}
+
+
+/* WHY CHOOSE CHROMELITE */
+
+.products-section {
+    padding: 70px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    color: #003153;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.product-card {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    border-bottom: 4px solid #FF6600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-icon {
+    background-color: #003153;
+    color: #FF6600;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    color: #003153;
+    margin-bottom: 15px;
+}
+
+
+/* CALL TO ACTION */
+
+.cta {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #003153;
+    color: white;
+}
+
+.cta h2 {
+    color: #FF6600;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+
+/* PRICING PAGE */
+
+.pricing-section {
+    padding: 60px 5%;
+}
+
+.pricing-section h1 {
+    color: #003153;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.pricing-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    text-align: center;
+}
+
+.pricing-table th,
+.pricing-table td {
+    border: 1px solid #ccc;
+    padding: 14px 10px;
+}
+
+.pricing-table thead {
+    background-color: #003153;
+    color: white;
+}
+
+.pricing-table th {
+    font-size: 14px;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+    background-color: #f0f4f8;
+}
+
+.category {
+    color: #003153;
+    font-weight: bold;
+    background-color: #e7edf2;
+}
+
+.pricing-table tfoot {
+    font-weight: bold;
+    background-color: #f0f4f8;
+}
+
+.pricing-table tfoot td {
+    text-align: right;
+}
+
+.pricing-table tfoot td:last-child {
+    color: #003153;
+}
+
+.pricing-table .grand-total {
+    background-color: #003153;
+    color: white;
+}
+
+.pricing-table .grand-total td {
+    color: white;
+    font-size: 16px;
+}
+
+
+/* PRINT BUTTON */
+
+.print-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.print-button button {
+    background-color: #FF6600;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.print-button button:hover {
+    background-color: #003153;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #003153;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.footer h3 {
+    color: #FF6600;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 20px;
+    }
+
+    .product-container {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .pricing-section {
+        padding: 40px 15px;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        white-space: nowrap;
+    }
+}

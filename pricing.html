@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chromelite | Pricing Schedule</title>
+
+    <link rel="stylesheet" href="chromelite.css">
+
+    <!-- Internal CSS: Print Styles Only -->
+    <style>
+        @media print {
+
+            .site-header,
+            .hero,
+            .footer,
+            .no-print {
+                display: none !important;
+            }
+
+            body {
+                background: white;
+                margin: 0;
+                padding: 15px;
+            }
+
+            .pricing-section {
+                display: block;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            .pricing-section h1,
+            .pricing-section p {
+                color: black;
+            }
+
+            .table-container {
+                width: 100%;
+                overflow: visible;
+            }
+
+            .pricing-table {
+                display: table;
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid black;
+            }
+
+            .pricing-table th,
+            .pricing-table td {
+                border: 1px solid black !important;
+                color: black !important;
+                background: white !important;
+                padding: 8px;
+            }
+
+            .pricing-table thead th {
+                background: #eeeeee !important;
+                font-weight: bold;
+            }
+
+            .pricing-table tfoot {
+                font-weight: bold;
+            }
+
+            .pricing-table tr {
+                page-break-inside: avoid;
+            }
+
+            @page {
+                size: landscape;
+                margin: 15mm;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="site-header">
+
+        <div class="logo">
+            <img src="assets/image.png"
+                 alt="Chromelite Technologies Logo"
+                 style="width: 180px;">
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+
+        <h1>Product Pricing Schedule</h1>
+
+        <p class="pricing-intro">
+            Chromelite Technologies Limited
+            <br>
+            Grand City Complex, Naalya, Kampala
+        </p>
+
+
+        <div class="table-container">
+
+            <table class="pricing-table">
+
+                <thead>
+                    <tr>
+                        <th>Item No.</th>
+                        <th>Category</th>
+                        <th>Product Description</th>
+                        <th>Unit Price (UGX)</th>
+                        <th>Qty</th>
+                        <th>Total (UGX)</th>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+
+                    <!-- Branded Stationery -->
+                    <tr>
+                        <td>1</td>
+
+                        <td rowspan="3" class="category">
+                            Branded Stationery
+                        </td>
+
+                        <td>Branded Ballpoint Pens</td>
+                        <td>2,500</td>
+                        <td>100</td>
+                        <td>250,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Branded Notebooks</td>
+                        <td>8,000</td>
+                        <td>50</td>
+                        <td>400,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Branded Envelopes</td>
+                        <td>1,500</td>
+                        <td>100</td>
+                        <td>150,000</td>
+                    </tr>
+
+
+                    <!-- Event Materials -->
+                    <tr>
+                        <td>4</td>
+
+                        <td rowspan="3" class="category">
+                            Event Materials
+                        </td>
+
+                        <td>Promotional Banners</td>
+                        <td>120,000</td>
+                        <td>4</td>
+                        <td>480,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Roll-up Displays</td>
+                        <td>180,000</td>
+                        <td>3</td>
+                        <td>540,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>Branded Lanyards</td>
+                        <td>5,000</td>
+                        <td>100</td>
+                        <td>500,000</td>
+                    </tr>
+
+
+                    <!-- Branded Apparel -->
+                    <tr>
+                        <td>7</td>
+
+                        <td rowspan="3" class="category">
+                            Branded Apparel
+                        </td>
+
+                        <td>Branded Polo Shirts</td>
+                        <td>45,000</td>
+                        <td>30</td>
+                        <td>1,350,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>Branded T-shirts</td>
+                        <td>30,000</td>
+                        <td>50</td>
+                        <td>1,500,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>Branded Caps</td>
+                        <td>25,000</td>
+                        <td>40</td>
+                        <td>1,000,000</td>
+                    </tr>
+
+                </tbody>
+
+
+                <!-- Totals -->
+                <tfoot>
+
+                    <tr>
+                        <td colspan="5">Subtotal</td>
+                        <td>6,170,000</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5">VAT @ 18%</td>
+                        <td>1,110,600</td>
+                    </tr>
+
+                    <tr class="grand-total">
+                        <td colspan="5">Grand Total</td>
+                        <td>7,280,600</td>
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </div>
+
+
+        <div class="print-button no-print">
+            <button onclick="window.print()">Print Pricing Schedule</button>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <h3>Chromelite Technologies Limited</h3>
+
+        <p>Grand City Complex, Naalya, Kampala</p>
+
+        <p>Phone: [0764XXXXXX]</p>
+
+        <p>Email: [aliyinza@gmail.com]</p>
+
+        <p class="copyright">
+            &copy; 2026 Chromelite Technologies Limited.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
